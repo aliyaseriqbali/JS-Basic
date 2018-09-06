@@ -124,6 +124,42 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 GOOD LUCK 😀
 */
 
+// var heightJohn, heightMark, massJohn, massMark, markBMI, johanBMI;
+
+// heightJohn = 1.90;
+// massJohn = 85;
+
+// heightMark = 1.75;
+// massMark = 70;
+
+// johanBMI = massJohn / (heightJohn * heightJohn)
+// markBMI = massMark / (heightMark * heightMark)
+// console.log('John: ' + johanBMI, 'Mark: ' + markBMI);
+// var isMarkBmiHigher = markBMI > johanBMI
+// console.log('Is Mark\'s BMI higher than John\'?' + ' ' + isMarkBmiHigher);
+
+
+
+/**************************************************************************************
+* IF / ELSE statements
+*/
+
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married');
+} else {
+    console.log(firstName + ' is single');
+}
+
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married');
+} else {
+    console.log(firstName + ' is single');
+}
+
 var heightJohn, heightMark, massJohn, massMark, markBMI, johanBMI;
 
 heightJohn = 1.90;
@@ -135,9 +171,10 @@ massMark = 70;
 johanBMI = massJohn / (heightJohn * heightJohn)
 markBMI = massMark / (heightMark * heightMark)
 console.log('John: ' + johanBMI, 'Mark: ' + markBMI);
-var isMarkBmiHigher = markBMI > johanBMI
-console.log('Is Mark\'s BMI higher than John\'?' + ' ' + isMarkBmiHigher);
 
-
-
+if(markBMI > johanBMI) {
+    console.log('Mark\'s BMI is than John\'s');
+} else{
+    console.log('John\'s BMI is than Mark\'s');
+}
 
