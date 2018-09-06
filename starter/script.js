@@ -48,9 +48,11 @@
 // var lastName = prompt('what is his last name?');
 // console.log(firstName + ' ' + lastName);
 
+
 /**************************************************************************************
 * Basic operators
 */
+
 // var now, yearJohn, yearMark;
 // now = '2018';
 // ageJohn = 28;
@@ -76,6 +78,7 @@
 // console.log(typeof 'Mark is older than John');
 // var x;
 // console.log(typeof x);
+
 
 /**************************************************************************************
 * Operator precedence
@@ -139,42 +142,74 @@ GOOD LUCK 😀
 // console.log('Is Mark\'s BMI higher than John\'?' + ' ' + isMarkBmiHigher);
 
 
-
 /**************************************************************************************
 * IF / ELSE statements
 */
 
+// var firstName = 'John';
+// var civilStatus = 'single';
+
+// if (civilStatus === 'married') {
+//     console.log(firstName + ' is married');
+// } else {
+//     console.log(firstName + ' is single');
+// }
+
+// var isMarried = true;
+// if (isMarried) {
+//     console.log(firstName + ' is married');
+// } else {
+//     console.log(firstName + ' is single');
+// }
+
+// var heightJohn, heightMark, massJohn, massMark, markBMI, johanBMI;
+
+// heightJohn = 1.90;
+// massJohn = 85;
+
+// heightMark = 1.75;
+// massMark = 70;
+
+// johanBMI = massJohn / (heightJohn * heightJohn)
+// markBMI = massMark / (heightMark * heightMark)
+// console.log('John: ' + johanBMI, 'Mark: ' + markBMI);
+
+// if(markBMI > johanBMI) {
+//     console.log('Mark\'s BMI is than John\'s');
+// } else{
+//     console.log('John\'s BMI is than Mark\'s');
+// }
+
+
+/**************************************************************************************
+* Boolean logic
+*/
 var firstName = 'John';
-var civilStatus = 'single';
+var age = 20;
 
-if (civilStatus === 'married') {
-    console.log(firstName + ' is married');
+if (age < 13) {
+    console.log(firstName + ' is a boy.')
+} else if (age >= 13 && age < 20) { //between 13 and 20
+    console.log(firstName + ' is a teenager');
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man');
 } else {
-    console.log(firstName + ' is single');
+    console.log(firstName + ' is a man.');
 }
 
-var isMarried = true;
-if (isMarried) {
-    console.log(firstName + ' is married');
-} else {
-    console.log(firstName + ' is single');
-}
 
-var heightJohn, heightMark, massJohn, massMark, markBMI, johanBMI;
 
-heightJohn = 1.90;
-massJohn = 85;
 
-heightMark = 1.75;
-massMark = 70;
 
-johanBMI = massJohn / (heightJohn * heightJohn)
-markBMI = massMark / (heightMark * heightMark)
-console.log('John: ' + johanBMI, 'Mark: ' + markBMI);
 
-if(markBMI > johanBMI) {
-    console.log('Mark\'s BMI is than John\'s');
-} else{
-    console.log('John\'s BMI is than Mark\'s');
-}
+
+
+
+
+
+
+
+
+
+
 
