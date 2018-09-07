@@ -477,28 +477,68 @@ GOOD LUCK 😀
 * Object and methods
 */
 
+// var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false,
+//     calcAge: function () {
+//         this.age = 2018 - this.birthYear;
+//     }
+// };
+
+// john.calcAge();
+// console.log(john)
+
+
+/**************************************************************************************
+* CODING CHALLENGE 4
+*/
+
+/*
+Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
+1. For each of them, create an object with properties for their full name, mass, and height
+2. Then, add a method to each object to calculate the BMI. Save the BMI to the object and also return it from the method.
+3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI.
+
+Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+
+GOOD LUCK 😀
+*/
+
 var john = {
-    firstName: 'John',
-    lastName: 'Smith',
-    birthYear: 1990,
-    family: ['Jane', 'Mark', 'Bob', 'Emily'],
-    job: 'teacher',
-    isMarried: false,
-    calcAge: function () {
-        this.age = 2018 - this.birthYear;
+    fullName: 'John Smith',
+    height: 1.80,
+    mass: 83,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI
     }
-};
+}
 
-john.calcAge();
-console.log(john)
+var mark = {
+    fullName: 'Mark Miller',
+    height: 1.75,
+    mass: 70,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI
+    }
+}
 
+john.calcBMI();
+mark.calcBMI();
+console.log(john, mark)
 
-
-
-
-
-
-
+if (john.BMI > mark.BMI) {
+    console.log(john.fullName + ' has the highest BMI of ' + john.BMI)
+} else if (mark.BMI > john.BMI) {
+    console.log(mark.fullName + ' has the highest BMI of ' + mark.BMI)
+} else {
+    console.log('Its a draw')
+}
 
 
 
