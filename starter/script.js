@@ -416,28 +416,76 @@ In the end, John would like to have 2 arrays:
 GOOD LUCK 😀
 */
 
-function countTip(bill) {
-    var percentage;
-    if (bill < 50) {
-        percentage = .20;
-    } else if (bill >= 50 && bill < 200) {
-        percentage = .15;
-    } else {
-        percentage = .10;
-    }
-    return percentage * bill;
+// function countTip(bill) {
+//     var percentage;
+//     if (bill < 50) {
+//         percentage = .20;
+//     } else if (bill >= 50 && bill < 200) {
+//         percentage = .15;
+//     } else {
+//         percentage = .10;
+//     }
+//     return percentage * bill;
+// }
+
+// var bills = [124, 48, 268];
+// var tips = [
+//     countTip(bills[0]),
+//     countTip(bills[1]),
+//     countTip(bills[2])
+// ];
+
+// var billsPlusTips = [
+//     bills[0] + tips[0],
+//     bills[1] + tips[1],
+//     bills[2] + tips[2]
+// ]
+// console.log(tips, billsPlusTips);
+
+
+/**************************************************************************************
+* Object and Properties
+*/
+
+// Object literal
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
 }
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
 
-var bills = [124, 48, 268];
-var tips = [
-    countTip(bills[0]),
-    countTip(bills[1]),
-    countTip(bills[2])
-];
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
 
-var billsPlusTips = [
-    bills[0] + tips[0],
-    bills[1] + tips[1],
-    bills[2] + tips[2]
-]
-console.log(tips, billsPlusTips);
+// New Object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
