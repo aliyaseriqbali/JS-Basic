@@ -508,59 +508,83 @@ Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and heig
 GOOD LUCK 😀
 */
 
-var john = {
-    fullName: 'John Smith',
-    height: 1.80,
-    mass: 83,
-    calcBMI: function () {
-        this.BMI = this.mass / (this.height * this.height);
-        return this.BMI
-    }
+// var john = {
+//     fullName: 'John Smith',
+//     height: 1.80,
+//     mass: 83,
+//     calcBMI: function () {
+//         this.BMI = this.mass / (this.height * this.height);
+//         return this.BMI
+//     }
+// }
+
+// var mark = {
+//     fullName: 'Mark Miller',
+//     height: 1.75,
+//     mass: 70,
+//     calcBMI: function () {
+//         this.BMI = this.mass / (this.height * this.height);
+//         return this.BMI
+//     }
+// }
+
+// john.calcBMI();
+// mark.calcBMI();
+// console.log(john, mark)
+
+// if (john.BMI > mark.BMI) {
+//     console.log(john.fullName + ' has the highest BMI of ' + john.BMI)
+// } else if (mark.BMI > john.BMI) {
+//     console.log(mark.fullName + ' has the highest BMI of ' + mark.BMI)
+// } else {
+//     console.log('Its a draw')
+// }
+
+
+/**************************************************************************************
+* Loops and iteration
+*/
+
+for (var i = 1; i <= 20; i += 2) {
+    console.log(i)
 }
 
-var mark = {
-    fullName: 'Mark Miller',
-    height: 1.75,
-    mass: 70,
-    calcBMI: function () {
-        this.BMI = this.mass / (this.height * this.height);
-        return this.BMI
-    }
+// i = 0, 0 < 10 true, log i to console, i++
+// i = 1, 1 < 10 true, log i to the console, i++
+//...
+// i = 9, 9 < 10 true, log i to the console, i++
+// i = 10, 10 < 10 FALSE, exit the loop!
+
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+
+// For loop
+for (var i = 0; i < john.length; i++) {
+    console.log(john[i]);
 }
 
-john.calcBMI();
-mark.calcBMI();
-console.log(john, mark)
-
-if (john.BMI > mark.BMI) {
-    console.log(john.fullName + ' has the highest BMI of ' + john.BMI)
-} else if (mark.BMI > john.BMI) {
-    console.log(mark.fullName + ' has the highest BMI of ' + mark.BMI)
-} else {
-    console.log('Its a draw')
+// While loop
+var i = 0;
+while (i < john.length) {
+    console.log(john[i]);
+    i++;
 }
 
+// continue statement 
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// break statement
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
+// Looping backwards
+for (var i = john.length - 1; i >= 0; i--) {
+    console.log(john[i]);
+}
 
 
 
