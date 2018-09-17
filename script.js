@@ -619,7 +619,7 @@ GOOD LUCK 😀
 var john = {
     family: 'John\'s family',
     bill: [124, 48, 268, 180, 42],
-    calcTip: function () {
+    calcTip: function() {
         this.tips = [];
         this.paidAmount = [];
 
@@ -641,7 +641,7 @@ var john = {
 var mark = {
     family: 'Mark\'s family',
     bill: [77, 375, 110, 45],
-    calcTip: function () {
+    calcTip: function() {
         this.tips = [];
         this.paidAmount = [];
 
@@ -668,8 +668,10 @@ function calcAverage(tips) {
     return sum / tips.length;
 }
 
+
 john.calcTip();
 mark.calcTip();
+console.log(john.tips);
 
 john.average = calcAverage(john.tips);
 mark.average = calcAverage(mark.tips);
@@ -685,7 +687,7 @@ if (john.average > mark.average) {
 }
 
 
-
+module.exports = { calcAverage, calcTip }
 
 
 

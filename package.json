@@ -1,0 +1,22 @@
+{
+  "name": "js-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliyaseriqbali/JS-Basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliyaseriqbali/JS-Basic/issues"
+  },
+  "homepage": "https://github.com/aliyaseriqbali/JS-Basic#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
